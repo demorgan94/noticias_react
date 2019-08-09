@@ -1,0 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types'
+
+const Header = (props) => {
+   return (
+      <header>
+         <nav>
+            <div className="nav-wrapper light-blue darken-3">
+               <a href="localhost:3000" className="brand-logo center">{props.titulo}</a>
+            </div>
+         </nav>
+      </header>
+   );
+}
+
+Header.propTypes = {
+   titulo: PropTypes.string.isRequired
+}
+
+export default Header;
